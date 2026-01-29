@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | UPEC Federation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header/Navigation -->
+    <header>
+        <nav>
+            <div class="logo">UPEC Federation</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="dropdown">
+                    <a href="#">Churches</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="churches/haslington.html">Haslington</a></li>
+                        <li><a href="churches/golden-grove.html">Golden Grove</a></li>
+                        <li><a href="churches/victoria.html">Victoria</a></li>
+                        <li><a href="churches/anns-grove.html">Ann's Grove</a></li>
+                        <li><a href="churches/mahaica.html">Mahaica</a></li>
+                        <li><a href="churches/belmonte.html">Belmonte</a></li>
+                        <li><a href="churches/cane-grove.html">Cane Grove</a></li>
+                    </ul>
+                </li>
+                <li><a href="index.html#events">Events</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contact Hero -->
+    <section class="contact-hero">
+        <h1>Contact Us</h1>
+        <p>Interested in joining a club or church? We'd love to hear from you!</p>
+    </section>
+
+    <!-- Contact Content -->
+    <div class="contact-content">
+
+        <!-- Contact Form -->
+        <div class="contact-form-container">
+            <h2>Get In Touch</h2>
+            <form class="contact-form" action="#" method="POST">
+
+                <!-- Full Name -->
+                <div class="form-group">
+                    <label for="fullname">Full Name <span class="required">*</span></label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+                </div>
+
+                <!-- Email -->
+                <div class="form-group">
+                    <label for="email">Email Address <span class="required">*</span></label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+
+                <!-- Phone -->
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+                </div>
+
+                <!-- Church Selection -->
+                <div class="form-group">
+                    <label for="church">Preferred Church <span class="required">*</span></label>
+                    <select id="church" name="church" required>
+                        <option value="" disabled selected>Select a church</option>
+                        <option value="haslington">Haslington</option>
+                        <option value="golden-grove">Golden Grove</option>
+                        <option value="victoria">Victoria</option>
+                        <option value="anns-grove">Ann's Grove</option>
+                        <option value="mahaica">Mahaica</option>
+                        <option value="belmonte">Belmonte</option>
+                        <option value="cane-grove">Cane Grove</option>
+                    </select>
+                </div>
+
+                <!-- Interest Checkboxes -->
+                <div class="form-group">
+                    <label>I'm interested in: <span class="required">*</span></label>
+                    <div class="checkbox-group">
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="join-church" name="interest" value="join-church">
+                            <label for="join-church">Joining a church</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="adventurer" name="interest" value="adventurer">
+                            <label for="adventurer">Adventurer Club (ages 6-9)</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="pathfinder" name="interest" value="pathfinder">
+                            <label for="pathfinder">Pathfinder Club (ages 10-15)</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="masterguide" name="interest" value="masterguide">
+                            <label for="masterguide">Master Guide Club (ages 16+)</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="general" name="interest" value="general">
+                            <label for="general">General Inquiry</label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Message -->
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Tell us more about your interest..."></textarea>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="submit-btn">Send Message</button>
+
+            </form>
+        </div>
+
+        <!-- Contact Info Sidebar -->
+        <div class="contact-info">
+            <div class="info-card">
+                <h3>Federation President</h3>
+                <p class="president-name">President Name</p>
+                <p>Email: president@upec.com</p>
+                <p>Phone: 000-0000</p>
+            </div>
+
+            <div class="info-card">
+                <h3>Office Hours</h3>
+                <p>Sunday - Friday</p>
+                <p>9:00 AM - 5:00 PM</p>
+            </div>
+
+            <div class="info-card">
+                <h3>Location</h3>
+                <p>Upper East Coast</p>
+                <p>Demerara, Guyana</p>
+            </div>
+
+            <div class="info-card social-links">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#" class="social-icon">Facebook</a>
+                    <a href="#" class="social-icon">Instagram</a>
+                    <a href="#" class="social-icon">YouTube</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>UPEC Federation | Upper East Coast, Guyana</p>
+        <p>&copy; 2025 UPEC Federation. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
